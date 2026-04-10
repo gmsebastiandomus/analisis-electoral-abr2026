@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colombia 2026 — Análisis Electoral Integral | Domus Capital</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--p1:#1a515c;--p2:#b6debb;--p3:#62b9c7;--s1:#a6a6a6;--s2:#fffa9f;--s3:#020d14;--lt:#e0f2f4;--nw:#f5f9fa;--bg:#f5f9fa;--sf:#fff;--bd:#d4dfe2;--tx:#020d14;--td:#5a6872;--red:#c0392b;--org:#d68910;--grn:#27ae60}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.c{max-width:1060px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:100;background:var(--s3);border-bottom:1px solid rgba(98,185,199,.2)}
+.ni{max-width:1060px;margin:0 auto;padding:0 24px;display:flex;align-items:center;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.ni::-webkit-scrollbar{display:none}
+.nb{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--p3);padding:13px 18px 13px 0;white-space:nowrap;border-right:1px solid rgba(255,255,255,.08);margin-right:4px}
+nav a{font-size:11px;font-weight:500;color:rgba(255,255,255,.45);text-decoration:none;padding:13px 11px;white-space:nowrap;cursor:pointer;transition:color .2s;letter-spacing:.3px}
+nav a:hover{color:var(--p3)}nav a.on{color:#fff}
+.hero{background:var(--p1);color:#fff;padding:64px 0 52px;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:0;right:0;bottom:0;width:40%;background:linear-gradient(135deg,rgba(98,185,199,.12) 0%,rgba(182,222,187,.06) 100%)}
+.hc{position:relative;z-index:1}
+.hl{font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--p2);margin-bottom:14px}
+.hb{width:48px;height:3px;background:var(--p3);margin-bottom:14px}
+.hero h1{font-size:clamp(1.8rem,5vw,3rem);font-weight:700;line-height:1.15;margin-bottom:12px}
+.hero h1 em{font-style:normal;color:var(--p2)}
+.hs{font-size:15px;color:rgba(255,255,255,.65);max-width:580px;font-weight:300;margin-bottom:16px}
+.hm{font-size:11px;color:rgba(255,255,255,.35);letter-spacing:.5px}
+.pg{display:none;padding:44px 0 56px;min-height:calc(100vh - 180px)}.pg.on{display:block}
+.sl{font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--p3);margin-bottom:6px}
+.st{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:700;color:var(--p1);margin-bottom:8px;line-height:1.2}
+.si{font-size:14px;color:var(--td);max-width:640px;margin-bottom:32px}
+.cd{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:22px;margin-bottom:14px}
+.ct{font-size:15px;font-weight:700;color:var(--p1);margin-bottom:12px}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:24px 0}
+.sc{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:18px;text-align:center}
+.sn{font-size:28px;font-weight:700;line-height:1;color:var(--p1)}.sla{font-size:11px;color:var(--td);margin-top:4px;font-weight:500}
+.br{display:flex;align-items:center;margin-bottom:9px;gap:7px}
+.bl{width:120px;min-width:120px;font-size:12px;font-weight:600;text-align:right}
+.bt{flex:1;height:24px;background:var(--lt);border-radius:4px;overflow:hidden}
+.bf{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:9px;font-size:11px;font-weight:700;color:#fff;min-width:fit-content}
+.bf.dk{color:var(--s3)}
+.bv{font-size:11px;font-weight:600;min-width:48px}
+.tg{display:inline-block;padding:2px 6px;border-radius:3px;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.8px}
+.ins{border-left:3px solid var(--p3);padding:14px 18px;margin:20px 0;background:rgba(98,185,199,.06);border-radius:0 6px 6px 0}
+.ins.w{border-left-color:var(--org);background:rgba(214,137,16,.05)}
+.ins.s{border-left-color:var(--grn);background:rgba(39,174,96,.05)}
+.ins.h{border-left-color:var(--p1);background:rgba(26,81,92,.05)}
+.ins.cr{border-left-color:var(--red);background:rgba(192,57,43,.04)}
+.il{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:3px;color:var(--td);margin-bottom:4px}
+.ins p{font-size:13px;line-height:1.6}.ins strong{color:var(--p1)}
+.vb{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:20px;margin-bottom:12px}
+.vh{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:11px;font-weight:700;color:var(--td);text-transform:uppercase;letter-spacing:1px}
+.vc{display:flex;height:32px;border-radius:6px;overflow:hidden;gap:2px}
+.vl,.vm,.vr{display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff}
+.vm{color:var(--s3);font-size:10px}
+.vbt{display:flex;justify-content:space-between;align-items:center;margin-top:5px;font-size:11px}
+.vw{font-size:10px;font-weight:700;padding:3px 7px;border-radius:3px;text-transform:uppercase;letter-spacing:1px}
+table.tb{width:100%;border-collapse:collapse;margin:14px 0;font-size:12px}
+.tb th{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:#fff;background:var(--p1);padding:8px 10px;text-align:left}
+.tb th:first-child{border-radius:4px 0 0 0}.tb th:last-child{border-radius:0 4px 0 0}
+.tb td{padding:9px 10px;border-bottom:1px solid var(--bd)}.tb tr:hover td{background:var(--lt)}
+.tl{display:flex;gap:12px;padding:13px 14px;background:var(--sf);border:1px solid var(--bd);border-radius:6px;border-left:3px solid var(--p3);margin-bottom:9px}
+.td{font-size:11px;font-weight:700;color:var(--p3);min-width:52px;padding-top:2px}
+.tc h4{font-size:13px;font-weight:700;color:var(--p1);margin-bottom:2px}
+.tc p{font-size:12px;color:var(--td);line-height:1.5}
+.pg2{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:22px 0}
+.pc{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:20px;text-align:center}
+.pn{font-size:15px;font-weight:700;margin-bottom:2px}.pp{font-size:10px;color:var(--td);text-transform:uppercase;letter-spacing:2px;margin-bottom:12px}
+.pnum{font-size:36px;font-weight:700;line-height:1;margin-bottom:4px}
+.plb{font-size:10px;color:var(--td);text-transform:uppercase;letter-spacing:1px}
+.pbg{width:100%;height:5px;background:var(--lt);border-radius:3px;margin-top:10px;overflow:hidden}
+.pbf{height:100%;border-radius:3px}
+.bs{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:20px;margin-bottom:12px;border-left:3px solid var(--red)}
+.bsn{font-size:26px;font-weight:700;color:var(--red);opacity:.25;float:right;margin-left:10px;line-height:1}
+.bst{font-size:14px;font-weight:700;color:var(--p1);margin-bottom:5px}
+.bsb{font-size:12px;color:var(--td);line-height:1.6}.bsb strong{color:var(--tx)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:768px){.g2{grid-template-columns:1fr}.bl{width:80px;min-width:80px;font-size:10px}nav a{font-size:10px;padding:11px 7px}.nb{font-size:9px;padding-right:10px}}
+.disc{background:var(--s3);color:rgba(255,255,255,.5);padding:44px 0 36px;font-size:11px;line-height:1.7}
+.disc h3{color:var(--p3);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.disc p{margin-bottom:8px}.disc strong{color:rgba(255,255,255,.75)}
+.disc .dd{width:100%;height:1px;background:rgba(255,255,255,.06);margin:16px 0}
+.ft{background:var(--s3);border-top:1px solid rgba(255,255,255,.04);color:rgba(255,255,255,.25);padding:16px 0;font-size:11px;text-align:center}
+.ftb{color:var(--p3);font-weight:700;letter-spacing:2px}
+.agg{background:rgba(26,81,92,.03);border:1px solid var(--bd);border-radius:8px;padding:20px;margin:16px 0}
+.agg-title{font-size:13px;font-weight:700;color:var(--p1);margin-bottom:8px}
+.agg-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.agg-label{font-size:11px;font-weight:600;width:80px;min-width:80px;text-align:right}
+.agg-bar{flex:1;height:20px;background:var(--lt);border-radius:3px;overflow:hidden}
+.agg-fill{height:100%;border-radius:3px;display:flex;align-items:center;padding-left:8px;font-size:10px;font-weight:700;color:#fff}
+</style>
+</head>
+<body>
+<nav><div class="ni">
+<div class="nb">Domus Capital</div>
+<a onclick="sp('res')" class="on" id="n-res">Resumen</a>
+<a onclick="sp('pv')" id="n-pv">1ª Vuelta</a>
+<a onclick="sp('sv')" id="n-sv">2ª Vuelta</a>
+<a onclick="sp('ctx')" id="n-ctx">Contexto</a>
+<a onclick="sp('prob')" id="n-prob">Probabilidad</a>
+<a onclick="sp('reg')" id="n-reg">Regional</a>
+<a onclick="sp('var')" id="n-var">Variables</a>
+<a onclick="sp('bp')" id="n-bp">Puntos Ciegos</a>
+<a onclick="sp('met')" id="n-met">Metodología</a>
+</div></nav>
+
+<header class="hero"><div class="c"><div class="hc">
+<div class="hl">Análisis de Riesgo Político</div><div class="hb"></div>
+<h1>Colombia 2026:<br>La Elección Más <em>Incierta</em> en Décadas</h1>
+<p class="hs">Cruce de encuestas, tendencias, contexto político y proyección de escenarios a 52 días de la primera vuelta.</p>
+<div class="hm">Abril 9, 2026 — Fuentes: AtlasIntel, CNC, GAD3, Guarumo, AS/COA, Bloomberg, La Silla Vacía</div>
+</div></div></header>
+
+<!-- ===== RESUMEN ===== -->
+<div class="pg on" id="p-res"><div class="c">
+<div class="sl">01 — Resumen ejecutivo</div>
+<div class="st">Tres candidatos, dos vueltas, un país dividido</div>
+<p class="si">Colombia enfrenta una elección con tres candidatos competitivos, alta polarización, y una segunda vuelta donde el resultado depende de quién pase de la derecha.</p>
+<div class="sg">
+<div class="sc"><div class="sn" style="color:var(--red)">52</div><div class="sla">Días para 1ª vuelta<br>31 mayo 2026</div></div>
+<div class="sc"><div class="sn">14</div><div class="sla">Candidatos<br>en tarjetón</div></div>
+<div class="sc"><div class="sn">~38%</div><div class="sla">Techo aparente<br>de Cepeda</div></div>
+<div class="sc"><div class="sn" style="color:var(--p3)">3.2M</div><div class="sla">Votos Valencia<br>consultas mar. 8</div></div>
+</div>
+<div class="ins h"><div class="il">Conclusión principal</div>
+<p><strong>Cepeda lidera primera vuelta pero enfrenta un escenario difícil en segunda vuelta contra Paloma Valencia.</strong> Contra De la Espriella, el escenario es más cerrado y depende de la encuestadora. La verdadera pregunta no es quién gana la primera vuelta, sino quién pasa de la derecha. Sin embargo, existen puntos ciegos relevantes que obligan a mantener cautela.</p></div>
+<div class="g2" style="margin-top:20px">
+<div class="cd" style="border-top:3px solid var(--red);text-align:center;padding:26px">
+<div style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--td);margin-bottom:8px">Continuidad — Izquierda</div>
+<div style="font-size:44px;font-weight:700;color:var(--red);line-height:1">~35%</div>
+<div style="font-size:11px;color:var(--td);margin-top:6px">Basado en datos de encuestas</div>
+<div style="margin-top:12px;height:5px;background:var(--lt);border-radius:3px;overflow:hidden"><div style="width:35%;height:100%;background:var(--red);border-radius:3px"></div></div>
+</div>
+<div class="cd" style="border-top:3px solid var(--p1);text-align:center;padding:26px">
+<div style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--td);margin-bottom:8px">Cambio — Centro a derecha</div>
+<div style="font-size:44px;font-weight:700;color:var(--p1);line-height:1">~65%</div>
+<div style="font-size:11px;color:var(--td);margin-top:6px">Valencia (35%) + Espriella (25%) + otros (5%)</div>
+<div style="margin-top:12px;height:5px;background:var(--lt);border-radius:3px;overflow:hidden"><div style="width:65%;height:100%;background:var(--p1);border-radius:3px"></div></div>
+</div></div>
+<div class="ins cr" style="margin-top:12px"><div class="il">Precaución</div>
+<p>La sección "Puntos Ciegos" ajusta esta lectura a <strong>~60/40</strong> al incorporar variables que las encuestas no capturan (ground game estatal, desempleo en mínimos, sesgo de fuentes). Ver esa sección antes de formarse un juicio definitivo.</p></div>
+</div></div>
+
+<!-- ===== PRIMERA VUELTA ===== -->
+<div class="pg" id="p-pv"><div class="c">
+<div class="sl">02 — Primera vuelta</div>
+<div class="st">Intención de voto — Cruce de 4 encuestadoras</div>
+<p class="si">Todas coinciden en el liderazgo de Cepeda (34-38%). La disputa real es por el segundo lugar: Valencia (CNC, Guarumo) vs De la Espriella (AtlasIntel, GAD3).</p>
+<div class="cd"><div class="ct">Promedio — Marzo/Abril 2026</div>
+<div style="margin:14px 0">
+<div class="br"><div class="bl">Cepeda</div><div class="bt"><div class="bf" style="width:36%;background:var(--red)">34–38%</div></div><div class="bv"><span class="tg" style="background:rgba(192,57,43,.1);color:var(--red)">Pacto H.</span></div></div>
+<div class="br"><div class="bl">De la Espriella</div><div class="bt"><div class="bf" style="width:22%;background:var(--org)">15–27%</div></div><div class="bv"><span class="tg" style="background:rgba(214,137,16,.1);color:var(--org)">Defensores</span></div></div>
+<div class="br"><div class="bl">Valencia</div><div class="bt"><div class="bf" style="width:22%;background:var(--p1)">16–23%</div></div><div class="bv"><span class="tg" style="background:rgba(98,185,199,.15);color:var(--p1)">Centro D.</span></div></div>
+<div class="br"><div class="bl">Fajardo</div><div class="bt"><div class="bf" style="width:5%;background:var(--grn)">4–5%</div></div><div class="bv"><span class="tg" style="background:rgba(39,174,96,.1);color:var(--grn)">Indep.</span></div></div>
+<div class="br"><div class="bl">López</div><div class="bt"><div class="bf dk" style="width:4%;background:#c5d0d3">1–4%</div></div><div class="bv"><span class="tg" style="background:#eee;color:var(--td)">Centro</span></div></div>
+</div></div>
+
+<div class="cd"><div class="ct">Comparativo por encuestadora — Marzo 2026</div>
+<table class="tb"><thead><tr><th>Candidato</th><th>CNC<br><span style="font-weight:400;opacity:.7">Presencial</span></th><th>Guarumo<br><span style="font-weight:400;opacity:.7">Presencial</span></th><th>GAD3<br><span style="font-weight:400;opacity:.7">Telefónica</span></th><th>AtlasIntel<br><span style="font-weight:400;opacity:.7">Digital</span></th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--red)">Cepeda</strong></td><td><strong>34.5%</strong></td><td><strong>37.5%</strong></td><td><strong>35%</strong></td><td><strong>37.8%</strong></td></tr>
+<tr><td><strong style="color:var(--p1)">Valencia</strong></td><td><strong>22.2%</strong></td><td><strong>19.9%</strong></td><td>16%</td><td>22.9%</td></tr>
+<tr><td><strong style="color:var(--org)">De la Espriella</strong></td><td>15.4%</td><td>20.2%</td><td><strong>21%</strong></td><td><strong>27.2%</strong></td></tr>
+<tr><td>Fajardo</td><td>3.6%</td><td>—</td><td>—</td><td>5%</td></tr>
+<tr><td>López</td><td>3.7%</td><td>—</td><td>4%</td><td>1%</td></tr>
+<tr><td style="color:var(--td)">Blanco/NS/NR</td><td>16.4%</td><td>11%+</td><td>—</td><td>4.9%</td></tr>
+</tbody></table>
+<p style="font-size:11px;color:var(--td);font-style:italic">Nota: las encuestas presenciales (CNC, Guarumo) ubican a Valencia 2ª. Las digitales/telefónicas (AtlasIntel, GAD3) ubican a De la Espriella 2º. Esta divergencia define quién pasa a segunda vuelta.</p>
+</div>
+
+<div class="ins"><div class="il">Efecto consultas del 8 de marzo</div>
+<p>Valencia obtuvo 3.23 millones de votos en la Gran Consulta por Colombia (46% del total de las 3 consultas). Su salto de ~4% a ~22% en un mes es el movimiento más grande de la campaña. La elección de Juan Daniel Oviedo (1.25M votos) como fórmula VP amplió su captura hacia el centro. El 52% de encuestados dice que las fórmulas VP influyeron en su voto. <strong>Dato clave:</strong> el Pacto pidió a su base no votar en consultas — la baja cifra de la izquierda (595K) no refleja su tamaño real.</p></div>
+</div></div>
+
+<!-- ===== SEGUNDA VUELTA ===== -->
+<div class="pg" id="p-sv"><div class="c">
+<div class="sl">03 — Segunda vuelta</div>
+<div class="st">Agregado de 4 encuestadoras + análisis del voto indeciso</div>
+<p class="si">Todos los escenarios de segunda vuelta comparten un elemento: un bloque de 10-24% de indecisos/blanco que define quién gana. Ese bloque es la verdadera elección.</p>
+
+<div class="ct" style="margin-bottom:12px">Escenario: Cepeda vs Paloma Valencia</div>
+<div class="vb">
+<div class="vh"><span style="color:var(--red)">CEPEDA</span><span>Agregado 4 encuestadoras</span><span style="color:var(--p1)">VALENCIA</span></div>
+<div class="vc">
+<div class="vl" style="width:43%;background:var(--red)">43%</div>
+<div class="vm" style="width:14%;background:#ddd">14%</div>
+<div class="vr" style="width:43%;background:var(--p1)">42%</div>
+</div>
+<div class="vbt"><span style="color:var(--td)">Promedio CNC, Guarumo, GAD3, AtlasIntel</span><span class="vw" style="background:rgba(255,250,159,.5);color:var(--p1)">EMPATE TÉCNICO</span></div>
+</div>
+<table class="tb"><thead><tr><th>Encuestadora</th><th>Cepeda</th><th>Valencia</th><th>Indeciso/Blanco</th><th>Diferencia</th></tr></thead>
+<tbody>
+<tr><td>CNC (presencial)</td><td style="color:var(--red)">43.3%</td><td style="color:var(--p1)">42.9%</td><td>13.8%</td><td style="color:var(--td)">+0.4 Cepeda</td></tr>
+<tr><td>Guarumo (presencial)</td><td style="color:var(--red)">43.3%</td><td style="color:var(--p1)">40.0%</td><td>16.7%</td><td style="color:var(--red)">+3.3 Cepeda</td></tr>
+<tr><td>GAD3 (telefónica)</td><td style="color:var(--red)">43%</td><td style="color:var(--p1)">40%</td><td>17%</td><td style="color:var(--red)">+3 Cepeda</td></tr>
+<tr><td>AtlasIntel (digital)</td><td style="color:var(--red)">39.6%</td><td style="color:var(--p1)">47.1%</td><td>13.3%</td><td style="color:var(--p1)"><strong>+7.5 Valencia</strong></td></tr>
+</tbody></table>
+
+<div class="ct" style="margin-top:24px;margin-bottom:12px">Escenario: Cepeda vs De la Espriella</div>
+<div class="vb">
+<div class="vh"><span style="color:var(--red)">CEPEDA</span><span>Agregado 4 encuestadoras</span><span style="color:var(--org)">DE LA ESPRIELLA</span></div>
+<div class="vc">
+<div class="vl" style="width:43%;background:var(--red)">43%</div>
+<div class="vm" style="width:18%;background:#ddd">18%</div>
+<div class="vr" style="width:39%;background:var(--org)">39%</div>
+</div>
+<div class="vbt"><span style="color:var(--td)">Promedio CNC, Guarumo, GAD3, AtlasIntel</span><span class="vw" style="background:rgba(192,57,43,.1);color:var(--red)">CEPEDA FAVORITO MARGINAL</span></div>
+</div>
+<table class="tb"><thead><tr><th>Encuestadora</th><th>Cepeda</th><th>De la Espriella</th><th>Indeciso/Blanco</th><th>Diferencia</th></tr></thead>
+<tbody>
+<tr><td>CNC (presencial)</td><td style="color:var(--red)"><strong>48.1%</strong></td><td style="color:var(--org)">35.5%</td><td>16.4%</td><td style="color:var(--red)">+12.6 Cepeda</td></tr>
+<tr><td>GAD3 (telefónica)</td><td style="color:var(--red)"><strong>45%</strong></td><td style="color:var(--org)">36%</td><td>16%</td><td style="color:var(--red)">+9 Cepeda</td></tr>
+<tr><td>Guarumo (presencial, ene)</td><td style="color:var(--red)">39.4%</td><td style="color:var(--org)">33.9%</td><td>26.7%</td><td style="color:var(--red)">+5.5 Cepeda</td></tr>
+<tr><td>AtlasIntel (digital)</td><td style="color:var(--red)">39.8%</td><td style="color:var(--org)"><strong>48.8%</strong></td><td>11.4%</td><td style="color:var(--org)"><strong>+9 Espriella</strong></td></tr>
+</tbody></table>
+
+<div class="ins w"><div class="il">Divergencia crítica</div>
+<p>En Cepeda vs De la Espriella, <strong>3 de 4 encuestadoras dan ganador a Cepeda</strong> (CNC +12.6, GAD3 +9, Guarumo +5.5). Solo AtlasIntel da ganador a De la Espriella (+9). La explicación probable: el "voto vergonzante" de derecha se captura más fácilmente en encuestas digitales anónimas que en presenciales. En Cepeda vs Valencia, <strong>todas las encuestas muestran un escenario mucho más cerrado</strong>.</p></div>
+
+<div class="cd" style="margin-top:20px;border-top:3px solid var(--p1)">
+<div class="ct">Deep dive: El bloque indeciso define la elección</div>
+<p style="font-size:13px;color:var(--td);margin-bottom:14px">En todos los escenarios de segunda vuelta, entre el <strong>10% y el 24%</strong> de los encuestados no tiene definido su voto. Este bloque es más grande que la diferencia entre candidatos en la mayoría de escenarios. ¿Hacia dónde se moverán?</p>
+
+<div class="ct" style="font-size:13px;margin-bottom:8px">Lección de 2022: cómo se movió el voto indeciso</div>
+<p style="font-size:12px;color:var(--td);line-height:1.6;margin-bottom:12px">En la segunda vuelta de 2022 (Petro vs Hernández), las encuestas previas mostraban empate técnico. El resultado fue Petro 50.4% vs Hernández 47.3% — <strong>3.1pp de diferencia, más holgada que lo esperado</strong>. El voto en blanco, que en encuestas llegaba a 6-8%, cayó a solo 2.2% en la urna. Los indecisos se rompieron mayoritariamente hacia el candidato percibido como "cambio" (Petro en 2022). Los votantes del tercer candidato eliminado (Fico Gutiérrez, 23.9%) se dividieron: la mayoría fue a Hernández, pero un porcentaje relevante se abstuvo.</p>
+
+<div class="ct" style="font-size:13px;margin-bottom:8px">Factores que inclinarán a los indecisos en 2026</div>
+<table class="tb"><thead><tr><th>Factor</th><th>Favorece a Cepeda</th><th>Favorece a derecha</th></tr></thead>
+<tbody>
+<tr><td>Narrativa de "cambio vs continuidad"</td><td>En 2022 ganó el cambio. Ahora Cepeda ES continuidad</td><td style="color:var(--p1)"><strong>Valencia/Espriella representan cambio</strong></td></tr>
+<tr><td>Rechazo al candidato rival</td><td>37.2% dice que nunca votaría Cepeda/Quilcué</td><td>22% de rechazo a De la Espriella, 14.7% a Valencia</td></tr>
+<tr><td>Desempeño económico tangible</td><td style="color:var(--red)"><strong>Desempleo en mínimos, salario mínimo +75%</strong></td><td>Inflación, crisis fiscal, decreto pensiones</td></tr>
+<tr><td>Seguridad/corrupción</td><td>—</td><td style="color:var(--p1)"><strong>75.9% ve corrupción como problema #1</strong></td></tr>
+<tr><td>Aparato estatal</td><td style="color:var(--red)"><strong>Control del gobierno, programas sociales</strong></td><td>—</td></tr>
+<tr><td>Tendencia regional</td><td>—</td><td style="color:var(--p1)"><strong>Incumbente pierde en 5 de 5 elecciones recientes</strong></td></tr>
+</tbody></table>
+</div>
+</div></div>
+
+<!-- ===== CONTEXTO ===== -->
+<div class="pg" id="p-ctx"><div class="c">
+<div class="sl">04 — Contexto país</div>
+<div class="st">Economía, seguridad, salud y el efecto teflón de Petro</div>
+<p class="si">El gobierno Petro llega a la recta final con una combinación inusual: alta desaprobación general pero logros tangibles en empleo e ingresos que sostienen una base leal.</p>
+
+<div class="sg">
+<div class="sc"><div class="sn" style="color:var(--red)">57.2%</div><div class="sla">Desaprueba<br>gestión Petro</div></div>
+<div class="sc"><div class="sn" style="color:var(--p3)">40.5%</div><div class="sla">Aprueba<br>gestión Petro</div></div>
+<div class="sc"><div class="sn" style="color:var(--org)">8.9%</div><div class="sla">Desempleo 2025<br>mínimo histórico</div></div>
+<div class="sc"><div class="sn">2.2%</div><div class="sla">PIB proy. 2026<br>(Banco Mundial)</div></div>
+</div>
+
+<div class="cd"><div class="ct">Economía: la dualidad</div>
+<p style="font-size:13px;color:var(--td);line-height:1.6">El gobierno presenta dos caras económicas simultáneas. Por un lado, indicadores sociales positivos: desempleo en 8.9% (mínimo del siglo), salario mínimo que pasó de $1M a $1.75M (+75%), y un consumo interno que se ha sostenido. Por otro, una crisis fiscal estructural: la Corte Constitucional acaba de tumbar (9 de abril) la tercera emergencia económica del gobierno, Petro amenaza con una cuarta, emitió un decreto obligando a fondos de pensiones a limitar inversiones en el exterior al 30%, y el Banco Mundial proyecta crecimiento de solo 2.2%. El déficit primario persiste desde 2015 y la deuda se acerca a niveles de riesgo. Para el votante de estrato 1-3 (65.8% de la muestra), la economía no es el problema principal — pero para el inversionista y la clase media-alta, el panorama fiscal es preocupante.</p></div>
+
+<div class="cd"><div class="ct">Seguridad y corrupción: los temas que marcan la agenda</div>
+<p style="font-size:13px;color:var(--td);line-height:1.6">El 75.9% de los colombianos identifica la corrupción como el problema más grave del país, seguido del sistema de salud (47.5%) y la inseguridad (38.1%). La economía como problema directo apenas aparece en 5.7%. El magnicidio del precandidato Miguel Uribe Turbay (agosto 2025) marcó profundamente la campaña y reforzó la narrativa de seguridad que beneficia a la derecha. El sistema de salud se ha deteriorado según la percepción ciudadana, con la reforma de salud del gobierno generando incertidumbre. Estos tres temas — corrupción, salud, seguridad — son el terreno donde la derecha tiene ventaja narrativa.</p></div>
+
+<div class="cd"><div class="ct">El "efecto teflón" de Petro</div>
+<p style="font-size:13px;color:var(--td);line-height:1.6">Pese a tres emergencias económicas tumbadas, escándalos de su familia, confrontaciones con la Corte, el Congreso y el Banco de la República, la aprobación de Petro se ha mantenido estable entre 39-42% durante meses. <strong>No sube, pero tampoco baja.</strong> Su base electoral (quienes lo votaron en 2022) lo respalda al 81.6%. Este "piso" de ~40% coincide casi exactamente con el techo de Cepeda en encuestas, lo que sugiere una transferencia directa de legitimidad. La estrategia retórica de Petro es consistente: enmarcar cada crisis como una lucha del pueblo contra las élites, convirtiendo los reveses institucionales en combustible para la movilización. Es una estrategia que tiene un techo claro pero un piso muy sólido.</p>
+<p style="font-size:13px;color:var(--td);line-height:1.6;margin-top:8px"><strong>Mapa regional de la aprobación:</strong> la región Central concentra 70.5% de desaprobación; el Caribe es la única donde Petro mantiene mayoría favorable (58.8%). Bogotá se ubica en 60.2% de desaprobación. La Pacífica (49.4%) y Amazonía/Orinoquía (57.7%) están más divididas. Este mapa de aprobación es, en esencia, el mapa electoral de la primera vuelta.</p></div>
+
+<div class="cd"><div class="ct">Turbulencia institucional — Últimas 72 horas</div>
+<div class="tl" style="border-left-color:var(--red)"><div class="td" style="color:var(--red)">Abr 9</div><div class="tc"><h4>Corte tumba emergencia económica</h4><p>3ª vez que la Corte tumba un estado de excepción del gobierno Petro. Magistrado ponente la calificó como "afrenta al Congreso".</p></div></div>
+<div class="tl" style="border-left-color:var(--org)"><div class="td" style="color:var(--org)">Abr 8</div><div class="tc"><h4>Petro amenaza con nueva emergencia</h4><p>"Si el Congreso no aprueba, decretamos una nueva emergencia económica en Colombia." Anunció proyecto de ley de financiamiento con urgencia.</p></div></div>
+<div class="tl"><div class="td">Abr 7</div><div class="tc"><h4>Decreto de repatriación de pensiones</h4><p>Obligó a fondos de pensiones a limitar inversiones en el exterior al 30%. Asofondos advirtió: "Cuando a uno lo obligan a vender, le toca vender barato."</p></div></div>
+</div>
+</div></div>
+
+<!-- ===== PROBABILIDAD ===== -->
+<div class="pg" id="p-prob"><div class="c">
+<div class="sl">05 — Proyección de escenarios</div>
+<div class="st">Probabilidad basada en datos de encuestas y contexto</div>
+<p class="si">Estimación basada exclusivamente en el cruce de encuestas publicadas, patrones regionales, resultados de las consultas del 8 de marzo y contexto político observable.</p>
+<div class="pg2">
+<div class="pc" style="border-top:3px solid var(--red)"><div class="pn" style="color:var(--red)">Iván Cepeda</div><div class="pp">Pacto Histórico</div><div class="pnum" style="color:var(--red)">~35%</div><div class="plb">Probabilidad</div><div class="pbg"><div class="pbf" style="width:35%;background:var(--red)"></div></div></div>
+<div class="pc" style="border-top:3px solid var(--p1)"><div class="pn" style="color:var(--p1)">Paloma Valencia</div><div class="pp">Centro Democrático</div><div class="pnum" style="color:var(--p1)">~35%</div><div class="plb">Probabilidad</div><div class="pbg"><div class="pbf" style="width:35%;background:var(--p1)"></div></div></div>
+<div class="pc" style="border-top:3px solid var(--org)"><div class="pn" style="color:var(--org)">De la Espriella</div><div class="pp">Defensores</div><div class="pnum" style="color:var(--org)">~25%</div><div class="plb">Probabilidad</div><div class="pbg"><div class="pbf" style="width:25%;background:var(--org)"></div></div></div>
+<div class="pc" style="border-top:3px solid var(--s1)"><div class="pn" style="color:var(--td)">Otro</div><div class="pp">Sorpresa</div><div class="pnum" style="color:var(--s1)">~5%</div><div class="plb">Probabilidad</div><div class="pbg"><div class="pbf" style="width:5%;background:var(--s1)"></div></div></div>
+</div>
+<div class="cd"><div class="ct">Árbol de decisiones</div>
+<table class="tb"><thead><tr><th>Escenario</th><th>Prob.</th><th>Resultado probable</th><th>Confianza</th></tr></thead>
+<tbody>
+<tr><td>Valencia pasa 2ª → vs Cepeda</td><td><strong style="color:var(--p1)">55%</strong></td><td>Valencia gana (~55/45)</td><td style="color:var(--org)">Media</td></tr>
+<tr><td>De la Espriella pasa 2ª → vs Cepeda</td><td><strong style="color:var(--org)">40%</strong></td><td>Cepeda gana (~55/45)</td><td style="color:var(--org)">Media-baja</td></tr>
+<tr><td>Sorpresa en primera vuelta</td><td style="color:var(--td)">5%</td><td>Impredecible</td><td style="color:var(--td)">Muy baja</td></tr>
+</tbody></table></div>
+
+<div class="st" style="margin-top:28px">Pregunta binaria: ¿Izquierda o cambio?</div>
+<div class="g2" style="margin:16px 0">
+<div class="cd" style="border-top:4px solid var(--red);text-align:center;padding:24px">
+<div style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--td);margin-bottom:6px">Continuidad</div>
+<div style="font-size:44px;font-weight:700;color:var(--red);line-height:1">~35%</div>
+<div style="margin-top:12px;height:5px;background:var(--lt);border-radius:3px;overflow:hidden"><div style="width:35%;height:100%;background:var(--red);border-radius:3px"></div></div>
+</div>
+<div class="cd" style="border-top:4px solid var(--p1);text-align:center;padding:24px">
+<div style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--td);margin-bottom:6px">Cambio</div>
+<div style="font-size:44px;font-weight:700;color:var(--p1);line-height:1">~65%</div>
+<div style="margin-top:12px;height:5px;background:var(--lt);border-radius:3px;overflow:hidden"><div style="width:65%;height:100%;background:var(--p1);border-radius:3px"></div></div>
+</div></div>
+<p style="font-size:11px;color:var(--td);text-align:center;font-style:italic">Basado en datos puros de encuestas. La sección "Puntos Ciegos" sugiere ajustar a ~60/40.</p>
+</div></div>
+
+<!-- ===== REGIONAL ===== -->
+<div class="pg" id="p-reg"><div class="c">
+<div class="sl">06 — Contexto regional</div>
+<div class="st">Cinco elecciones recientes en países pares</div>
+<p class="si">El patrón regional es claro pero no unidimensional. No solo pierde el candidato del gobierno: pierde de una manera específica que tiene paralelos directos con Colombia.</p>
+<div class="cd">
+<table class="tb"><thead><tr><th>País</th><th>Aprobación saliente</th><th>Resultado</th><th>Margen 2ª vuelta</th><th>Tema dominante</th></tr></thead>
+<tbody>
+<tr><td><strong>Chile 2025</strong></td><td style="color:var(--red)">28% (Boric)</td><td>Kast (der.) 58.3%</td><td>+16.6pp</td><td>Seguridad, migración</td></tr>
+<tr><td><strong>Argentina 2023</strong></td><td style="color:var(--red)">~25% (Fernández)</td><td>Milei (der.) 55.7%</td><td>+11.4pp</td><td>Inflación, anti-casta</td></tr>
+<tr><td><strong>Ecuador 2023</strong></td><td style="color:var(--red)">~15% (Lasso)</td><td>Noboa (der.) 51.8%</td><td>+3.6pp</td><td>Seguridad, narco</td></tr>
+<tr><td><strong>Panamá 2024</strong></td><td style="color:var(--red)">~20% (Cortizo)</td><td>Mulino (der.) 34.3%*</td><td>1ª vuelta</td><td>Anti-corrupción</td></tr>
+<tr><td><strong>Colombia 2022</strong></td><td style="color:var(--red)">~25% (Duque)</td><td>Petro (izq.) 50.4%</td><td>+3.1pp</td><td>Cambio, desigualdad</td></tr>
+</tbody></table>
+</div>
+
+<div class="cd"><div class="ct">Paralelos que aplican y que no aplican a Colombia 2026</div>
+<p style="font-size:13px;color:var(--td);line-height:1.6;margin-bottom:10px"><strong>Lo que aplica:</strong> En los 5 casos, el candidato asociado al gobierno saliente perdió. El tema de seguridad como driver electoral (Chile, Ecuador) es directamente trasladable a Colombia, donde el 38.1% lo identifica como problema grave. La fragmentación de la oposición como riesgo (Colombia 2022) es exactamente lo que enfrenta la derecha colombiana con Valencia vs De la Espriella. Chile es el paralelo más directo: Boric con baja aprobación, candidata oficialista (Jara) que lideró primera vuelta pero fue aplastada en segunda por la consolidación de la derecha.</p>
+<p style="font-size:13px;color:var(--td);line-height:1.6"><strong>Lo que NO aplica:</strong> La aprobación de Petro (~41%) es significativamente más alta que la de Boric (28%), Fernández (~25%), Lasso (~15%) o Duque (~25%). Esa diferencia de 13-26 puntos es enorme. Petro tiene un piso electoral más sólido que cualquiera de esos presidentes. Además, Colombia no tiene voto obligatorio como Chile (donde 5.1 millones de nuevos votantes definieron la elección a favor de Kast), lo que significa que la participación electoral es un factor impredecible que puede favorecer a cualquier lado.</p></div>
+</div></div>
+
+<!-- ===== VARIABLES ===== -->
+<div class="pg" id="p-var"><div class="c">
+<div class="sl">07 — Variables clave</div>
+<div class="st">Factores internos y externos que pueden redefinir la elección</div>
+<p class="si">Las próximas 7 semanas tienen al menos 8 variables que podrían mover significativamente las probabilidades.</p>
+
+<div class="ct" style="margin-bottom:10px">Variables internas</div>
+<div class="tl" style="border-left-color:var(--red)"><div class="td" style="color:var(--red)">Abr 20</div><div class="tc"><h4>Decisión del Partido Liberal</h4><p>César Gaviria define a quién apoya. Ha descartado a Cepeda y a De la Espriella. Si va con Valencia, aporta maquinaria territorial en regiones clave (Caribe, Valle, Eje Cafetero). Podría ser el game-changer que consolide la candidatura de Valencia como la opción de centro-derecha unificada. Si deja en libertad, el efecto es neutro.</p></div></div>
+<div class="tl" style="border-left-color:var(--org)"><div class="td" style="color:var(--org)">Abr-May</div><div class="tc"><h4>Dinámica Valencia vs De la Espriella</h4><p>Si uno de los dos colapsa en encuestas y el voto anti-Cepeda se consolida, el beneficio de la fragmentación desaparece. Si ambos mantienen ~20%+, Cepeda gana primera vuelta cómodamente pero con un rival dividido que puede unificarse en segunda vuelta. El escenario más peligroso para la derecha es que De la Espriella suba lo suficiente para pasar él a segunda vuelta, donde todas las encuestas (excepto AtlasIntel) lo dan perdedor contra Cepeda.</p></div></div>
+<div class="tl"><div class="td">May</div><div class="tc"><h4>Debates presidenciales</h4><p>Con 14 candidatos, los debates son caóticos pero pueden generar momentos definitorios. Valencia necesita mostrarse presidenciable para el centro; De la Espriella necesita evitar que lo perciban como radical; Cepeda necesita no cometer errores y mantener su ventaja. Un tropiezo de cualquiera podría mover 3-5pp.</p></div></div>
+<div class="tl" style="border-left-color:var(--p1)"><div class="td" style="color:var(--p1)">Continuo</div><div class="tc"><h4>Crisis fiscal y decretos de Petro</h4><p>El gobierno está en modo de confrontación institucional acelerada. Cada decreto (pensiones, emergencia, financiamiento) genera dos efectos simultáneos: moviliza la base del Pacto ("nos están atacando") y empuja al centro hacia la derecha ("este gobierno es caótico"). El decreto de repatriación de pensiones (30% límite exterior) es particularmente sensible para la clase media-alta y el sector financiero.</p></div></div>
+<div class="tl" style="border-left-color:var(--red)"><div class="td" style="color:var(--red)">Continuo</div><div class="tc"><h4>Narrativa de fraude electoral</h4><p>El Pacto Histórico ha intensificado la retórica sobre posible fraude. Si la campaña logra instalar suficiente desconfianza, podría movilizar masivamente a su base "para proteger los votos", aumentando la participación en zonas tradicionalmente de izquierda. Es una estrategia de doble filo: también puede deslegitimar el proceso si pierden.</p></div></div>
+
+<div class="ct" style="margin-top:24px;margin-bottom:10px">Variables externas</div>
+<div class="tl" style="border-left-color:var(--s1)"><div class="td" style="color:var(--td)">Geopolítica</div><div class="tc"><h4>Efecto Trump y relación bilateral</h4><p>La administración Trump ha mostrado una postura más dura con Colombia. Un deterioro de la relación bilateral podría beneficiar a Cepeda (narrativa de soberanía) o perjudicarlo (asociación con el eje anti-americano). Si Trump interviene directa o indirectamente — con sanciones, declaraciones, o deportaciones masivas de colombianos — el efecto es impredecible pero potencialmente explosivo.</p></div></div>
+<div class="tl" style="border-left-color:var(--s1)"><div class="td" style="color:var(--td)">Venezuela</div><div class="tc"><h4>Crisis venezolana y migración</h4><p>La captura de Maduro (enero 2026) generó un momento de unidad en la región, pero la inestabilidad de Venezuela sigue produciendo flujos migratorios. Si hay una crisis de refugiados ampliada, el tema migratorio entra al debate electoral colombiano — terreno favorable para la derecha, como demostró Chile con Kast.</p></div></div>
+<div class="tl" style="border-left-color:var(--s1)"><div class="td" style="color:var(--td)">Jun-Jul</div><div class="tc"><h4>Mundial de Fútbol 2026</h4><p>El Mundial arranca el 11 de junio en EE.UU., México y Canadá — 10 días después de la primera vuelta (31 mayo) y en plena campaña de segunda vuelta (21 junio). Colombia clasificó y el país estará volcado al fútbol. Esto podría deprimir la participación electoral en segunda vuelta, lo que históricamente favorece al candidato con la base más disciplinada (en este caso, Cepeda/Pacto). También reduce el espacio mediático para campaña negativa.</p></div></div>
+<div class="tl" style="border-left-color:var(--s1)"><div class="td" style="color:var(--td)">Global</div><div class="tc"><h4>Tensiones globales (Irán, aranceles, recesión)</h4><p>Una escalada en el conflicto Irán/Israel o una recesión global impactaría precios del petróleo — del cual depende el 30% de los ingresos de exportación de Colombia. Un shock externo que deteriore la economía en las últimas semanas podría culparse al gobierno y beneficiar al candidato de cambio, o generar un efecto de "momento no es hora de cambiar" dependiendo de cómo se enmarque.</p></div></div>
+
+<div class="ins cr" style="margin-top:16px"><div class="il">Ajuste por variables no capturadas</div>
+<p>Al incorporar las variables internas y externas — particularmente el ground game estatal, el desempleo en mínimos históricos, el sesgo del ecosistema informativo, y la lección de la aprobación de Petro más alta que la de cualquier presidente saliente en la región — <strong>la probabilidad binaria se ajusta de ~65/35 a ~60/40 a favor del cambio</strong>. Esto convierte la elección de "probablemente gana la derecha" a "la derecha es favorita marginal, pero un gobierno Cepeda está dentro del rango esperado."</p></div>
+</div></div>
+
+<!-- ===== PUNTOS CIEGOS ===== -->
+<div class="pg" id="p-bp"><div class="c">
+<div class="sl">08 — Mirada crítica</div>
+<div class="st">Puntos ciegos: lo que podríamos no estar viendo</div>
+<p class="si">Todo análisis tiene un sesgo de fuente. Colombia tiene miles de realidades y narrativas que no necesariamente se ven desde las encuestas, los medios y los analistas que operan dentro de una misma caja de resonancia.</p>
+
+<div class="bs"><div class="bsn">01</div><div class="bst">La consulta del 8 de marzo es menos informativa de lo que parece</div><div class="bsb">Los 7 millones de votos de la centro-derecha son reales, pero ocurrieron cuando <strong>el Pacto pidió a su base no participar</strong>. Estamos comparando una derecha movilizada contra una izquierda que se abstuvo deliberadamente. El Pacto sacó la bancada más grande del Senado ese mismo día.</div></div>
+<div class="bs"><div class="bsn">02</div><div class="bst">La narrativa del "techo" de Cepeda podría ser prematura</div><div class="bsb">A Petro le pusieron "techo" de 35% en 2022 y terminó con 40.3% en primera y ganó segunda. Cepeda ha pasado de 20% a 38% en cinco meses. <strong>La correlación con la aprobación de Petro (~41%) es lógica pero no es una ley física.</strong></div></div>
+<div class="bs"><div class="bsn">03</div><div class="bst">El ground game estatal es invisible para encuestas y medios</div><div class="bsb">El Pacto tiene control del aparato estatal. Programas sociales, presencia institucional en territorios, acceso a recursos. <strong>Millones de familias que reciben transferencias tienden a votar por la continuidad.</strong> Eso pasa en barrios y veredas donde los encuestadores no llegan, donde la política es por WhatsApp, TikTok y radio comunitaria.</div></div>
+<div class="bs"><div class="bsn">04</div><div class="bst">El desempleo en mínimos es un dato incómodo para la tesis anti-Petro</div><div class="bsb">8.9% de desempleo, mínimo en décadas. Salario mínimo +75%. <strong>El colombiano de estrato 1-3 probablemente siente que su situación mejoró.</strong> Eso no aparece en Bloomberg pero sí en la urna.</div></div>
+<div class="bs"><div class="bsn">05</div><div class="bst">La transferencia de votos derecha→derecha NO es automática</div><div class="bsb"><strong>De la Espriella es populista anti-establishment; Valencia es establishment uribista.</strong> Un porcentaje de votantes de De la Espriella podría abstenerse o ir con Cepeda como "voto anti-élite" antes que con Valencia.</div></div>
+<div class="bs"><div class="bsn">06</div><div class="bst">El sesgo del ecosistema informativo</div><div class="bsb">Semana, RCN, El Tiempo, Bloomberg, AS/COA — todas las fuentes de este análisis tienden a ver con optimismo las chances de la derecha. <strong>Las fuentes que la base del Pacto consume cuentan una historia diferente.</strong> Este análisis lo reconoce explícitamente.</div></div>
+
+<div style="margin-top:24px;padding:22px;background:var(--sf);border:1px solid var(--bd);border-radius:8px;border-top:3px solid var(--p1)">
+<div class="ct">Probabilidad final ajustada</div>
+<p style="font-size:13px;color:var(--td);margin-bottom:16px">Los puntos ciegos obligan a mover la probabilidad de Cepeda del 35% (dato puro de encuestas) a ~40%. La dirección no cambia, pero sí el grado de certeza.</p>
+<div class="g2">
+<div style="text-align:center;padding:16px;background:rgba(192,57,43,.04);border-radius:6px">
+<div style="font-size:10px;font-weight:700;letter-spacing:2px;color:var(--td);margin-bottom:4px">IZQUIERDA</div>
+<div style="font-size:38px;font-weight:700;color:var(--red);line-height:1">~40%</div>
+</div>
+<div style="text-align:center;padding:16px;background:rgba(26,81,92,.04);border-radius:6px">
+<div style="font-size:10px;font-weight:700;letter-spacing:2px;color:var(--td);margin-bottom:4px">CENTRO-DERECHA</div>
+<div style="font-size:38px;font-weight:700;color:var(--p1);line-height:1">~60%</div>
+</div></div>
+<div class="ins cr" style="margin-top:12px;margin-bottom:0"><div class="il">Interpretación</div>
+<p><strong>63/37 es "probablemente gana la derecha". 60/40 es "favorita marginal pero perfectamente puede salir al revés."</strong> Un gobierno Cepeda no sería sorpresa estadística — sería un resultado dentro del rango esperado.</p></div>
+</div>
+</div></div>
+
+<!-- ===== METODOLOGÍA ===== -->
+<div class="pg" id="p-met"><div class="c">
+<div class="sl">09 — Nota metodológica</div>
+<div class="st">Confiabilidad de las encuestas</div>
+<div class="cd">
+<table class="tb"><thead><tr><th>Encuestadora</th><th>Método</th><th>Muestra</th><th>Ranking LSV</th><th>Sesgo</th></tr></thead>
+<tbody>
+<tr><td><strong>CNC</strong> (Cambio)</td><td>Presencial hogares</td><td>2,157</td><td style="color:var(--grn)">Top 3</td><td>Contratos con gobierno ($14MM COP)</td></tr>
+<tr><td><strong>AtlasIntel</strong> (Semana)</td><td>Digital (RDR)</td><td>3,616</td><td style="color:var(--grn)">Top 3</td><td>Sobrerepresenta población digital</td></tr>
+<tr><td><strong>GAD3</strong> (RCN)</td><td>Telefónica CATI</td><td>1,076</td><td style="color:var(--grn)">Top 3</td><td>Muestra más pequeña; excluye sin celular</td></tr>
+<tr><td><strong>Guarumo</strong> (El Tiempo)</td><td>Presencial probabilística</td><td>3,736</td><td style="color:var(--org)">Medio</td><td>Conservadora en estimaciones</td></tr>
+</tbody></table>
+<p style="font-size:11px;color:var(--td);margin-top:8px;font-style:italic">Todas en rango medio de calificación (La Silla Vacía, actualizado tras consultas 2026). Margen de error real en Colombia es probablemente ±4pp, no los ±2-3pp declarados, dada la complejidad del campo con 14 candidatos y la brecha digital.</p>
+</div></div></div>
+
+<!-- DISCLAIMER -->
+<div class="disc"><div class="c">
+<h3>Aviso legal y confidencialidad</h3>
+<p><strong>Documento confidencial — Domus Capital ("Inversiones Domus Colombia SAS")</strong></p>
+<p>El presente documento ha sido preparado por <strong>Domus Capital</strong> con fines exclusivamente informativos y de análisis interno. Su contenido es de carácter <strong>confidencial y reservado</strong>, y está destinado únicamente a las personas o entidades a quienes ha sido directamente compartido por Domus Capital o por su Socio Director.</p>
+<div class="dd"></div>
+<p><strong>Naturaleza del análisis.</strong> Este documento no constituye un estudio estadístico propio ni una encuesta electoral. Se trata de un ejercicio de interpretación y análisis de fuentes de conocimiento público — encuestas publicadas por terceros, artículos de prensa, reportes de organismos internacionales y datos electorales oficiales — complementado con herramientas de inteligencia artificial para el procesamiento, síntesis y estructuración de la información. Las probabilidades y proyecciones expresadas son estimaciones subjetivas informadas, no predicciones, y no deben interpretarse como certezas ni como asesoría de inversión.</p>
+<p><strong>Fuentes.</strong> AtlasIntel/Semana, CNC/Cambio, GAD3/RCN, Guarumo-EcoAnalítica/El Tiempo, La Silla Vacía, AS/COA, Bloomberg Latam Pulse, Infobae Colombia, El Espectador, El Colombiano, The Bogotá Post, Valora Analitik, Wikipedia, Registraduría Nacional del Estado Civil.</p>
+<p><strong>Limitaciones.</strong> El análisis reconoce explícitamente la existencia de sesgos en las fuentes utilizadas y en la metodología de las encuestas disponibles. La sección "Puntos Ciegos" identifica deliberadamente los contrafactuales que podrían invalidar las conclusiones principales. Se recomienda considerar la totalidad del documento antes de formarse un juicio.</p>
+<div class="dd"></div>
+<p><strong>Prohibiciones.</strong> Queda expresamente prohibida la reproducción total o parcial de este documento, su distribución a terceros no autorizados, o su uso con fines comerciales, editoriales o de campaña electoral, sin la autorización previa y por escrito de Inversiones Domus Colombia SAS.</p>
+<p style="margin-top:14px"><strong>Domus Capital ("Inversiones Domus Colombia SAS")</strong> — Bogotá, Colombia — www.domuscap.co — sg@domuscap.co</p>
+<p style="opacity:.35;margin-top:4px">Abril 9, 2026</p>
+</div></div>
+
+<footer class="ft"><div class="c"><span class="ftb">DOMUS CAPITAL</span> · Análisis de Riesgo Político · Abril 2026</div></footer>
+
+<script>
+function sp(id){
+document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));
+document.querySelectorAll('nav a').forEach(a=>a.classList.remove('on'));
+document.getElementById('p-'+id).classList.add('on');
+document.getElementById('n-'+id).classList.add('on');
+window.scrollTo({top:0,behavior:'instant'});
+}
+</script>
+</body>
+</html>
