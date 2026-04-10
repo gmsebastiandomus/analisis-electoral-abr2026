@@ -101,7 +101,14 @@ table.tb{width:100%;border-collapse:collapse;margin:14px 0;font-size:12px}
 .disc-logo .disc-tag{font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--p3)}
 .ft-logo{display:inline-block;height:28px;vertical-align:middle;margin-right:14px}
 .sym-accent{position:absolute;opacity:.04;pointer-events:none}
-@media(max-width:768px){.hero-logo{width:200px;top:22px;right:20px}.nav-logo{height:26px}}
+@media(max-width:768px){.hero{padding:32px 0 44px}.hero-logo{position:static;width:160px;max-width:60%;margin:0 0 20px 0;filter:none}.hero .c{padding-top:4px}.nav-logo{height:26px}.disc-logo img{height:44px}}
+
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;margin:14px 0;border-radius:6px;border:1px solid var(--bd);background:var(--sf)}
+.tw table.tb{margin:0;min-width:560px}
+.tw::-webkit-scrollbar{height:6px}
+.tw::-webkit-scrollbar-thumb{background:var(--bd);border-radius:3px}
+body{overflow-x:hidden}
+.pg .c{overflow-x:hidden}
 </style>
 </head>
 <body>
@@ -170,7 +177,7 @@ table.tb{width:100%;border-collapse:collapse;margin:14px 0;font-size:12px}
 </div></div>
 
 <div class="cd"><div class="ct">Comparativo por encuestadora — Marzo 2026</div>
-<table class="tb"><thead><tr><th>Candidato</th><th>CNC<br><span style="font-weight:400;opacity:.7">Presencial</span></th><th>Guarumo<br><span style="font-weight:400;opacity:.7">Presencial</span></th><th>GAD3<br><span style="font-weight:400;opacity:.7">Telefónica</span></th><th>AtlasIntel<br><span style="font-weight:400;opacity:.7">Digital</span></th></tr></thead>
+<div class="tw"><table class="tb"><thead><tr><th>Candidato</th><th>CNC<br><span style="font-weight:400;opacity:.7">Presencial</span></th><th>Guarumo<br><span style="font-weight:400;opacity:.7">Presencial</span></th><th>GAD3<br><span style="font-weight:400;opacity:.7">Telefónica</span></th><th>AtlasIntel<br><span style="font-weight:400;opacity:.7">Digital</span></th></tr></thead>
 <tbody>
 <tr><td><strong style="color:var(--red)">Cepeda</strong></td><td><strong>34.5%</strong></td><td><strong>37.5%</strong></td><td><strong>35%</strong></td><td><strong>37.8%</strong></td></tr>
 <tr><td><strong style="color:var(--p1)">Valencia</strong></td><td><strong>22.2%</strong></td><td><strong>19.9%</strong></td><td>16%</td><td>22.9%</td></tr>
@@ -178,7 +185,7 @@ table.tb{width:100%;border-collapse:collapse;margin:14px 0;font-size:12px}
 <tr><td>Fajardo</td><td>3.6%</td><td>—</td><td>—</td><td>5%</td></tr>
 <tr><td>López</td><td>3.7%</td><td>—</td><td>4%</td><td>1%</td></tr>
 <tr><td style="color:var(--td)">Blanco/NS/NR</td><td>16.4%</td><td>11%+</td><td>—</td><td>4.9%</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p style="font-size:11px;color:var(--td);font-style:italic">Nota: las encuestas presenciales (CNC, Guarumo) ubican a Valencia 2ª. Las digitales/telefónicas (AtlasIntel, GAD3) ubican a De la Espriella 2º. Esta divergencia define quién pasa a segunda vuelta.</p>
 </div>
 
@@ -202,13 +209,13 @@ table.tb{width:100%;border-collapse:collapse;margin:14px 0;font-size:12px}
 </div>
 <div class="vbt"><span style="color:var(--td)">Promedio CNC, Guarumo, GAD3, AtlasIntel</span><span class="vw" style="background:rgba(255,250,159,.5);color:var(--p1)">EMPATE TÉCNICO</span></div>
 </div>
-<table class="tb"><thead><tr><th>Encuestadora</th><th>Cepeda</th><th>Valencia</th><th>Indeciso/Blanco</th><th>Diferencia</th></tr></thead>
+<div class="tw"><table class="tb"><thead><tr><th>Encuestadora</th><th>Cepeda</th><th>Valencia</th><th>Indeciso/Blanco</th><th>Diferencia</th></tr></thead>
 <tbody>
 <tr><td>CNC (presencial)</td><td style="color:var(--red)">43.3%</td><td style="color:var(--p1)">42.9%</td><td>13.8%</td><td style="color:var(--td)">+0.4 Cepeda</td></tr>
 <tr><td>Guarumo (presencial)</td><td style="color:var(--red)">43.3%</td><td style="color:var(--p1)">40.0%</td><td>16.7%</td><td style="color:var(--red)">+3.3 Cepeda</td></tr>
 <tr><td>GAD3 (telefónica)</td><td style="color:var(--red)">43%</td><td style="color:var(--p1)">40%</td><td>17%</td><td style="color:var(--red)">+3 Cepeda</td></tr>
 <tr><td>AtlasIntel (digital)</td><td style="color:var(--red)">39.6%</td><td style="color:var(--p1)">47.1%</td><td>13.3%</td><td style="color:var(--p1)"><strong>+7.5 Valencia</strong></td></tr>
-</tbody></table>
+</tbody></table></div>
 
 <div class="ct" style="margin-top:24px;margin-bottom:12px">Escenario: Cepeda vs De la Espriella</div>
 <div class="vb">
@@ -220,13 +227,13 @@ table.tb{width:100%;border-collapse:collapse;margin:14px 0;font-size:12px}
 </div>
 <div class="vbt"><span style="color:var(--td)">Promedio CNC, Guarumo, GAD3, AtlasIntel</span><span class="vw" style="background:rgba(192,57,43,.1);color:var(--red)">CEPEDA FAVORITO MARGINAL</span></div>
 </div>
-<table class="tb"><thead><tr><th>Encuestadora</th><th>Cepeda</th><th>De la Espriella</th><th>Indeciso/Blanco</th><th>Diferencia</th></tr></thead>
+<div class="tw"><table class="tb"><thead><tr><th>Encuestadora</th><th>Cepeda</th><th>De la Espriella</th><th>Indeciso/Blanco</th><th>Diferencia</th></tr></thead>
 <tbody>
 <tr><td>CNC (presencial)</td><td style="color:var(--red)"><strong>48.1%</strong></td><td style="color:var(--org)">35.5%</td><td>16.4%</td><td style="color:var(--red)">+12.6 Cepeda</td></tr>
 <tr><td>GAD3 (telefónica)</td><td style="color:var(--red)"><strong>45%</strong></td><td style="color:var(--org)">36%</td><td>16%</td><td style="color:var(--red)">+9 Cepeda</td></tr>
 <tr><td>Guarumo (presencial, ene)</td><td style="color:var(--red)">39.4%</td><td style="color:var(--org)">33.9%</td><td>26.7%</td><td style="color:var(--red)">+5.5 Cepeda</td></tr>
 <tr><td>AtlasIntel (digital)</td><td style="color:var(--red)">39.8%</td><td style="color:var(--org)"><strong>48.8%</strong></td><td>11.4%</td><td style="color:var(--org)"><strong>+9 Espriella</strong></td></tr>
-</tbody></table>
+</tbody></table></div>
 
 <div class="ins w"><div class="il">Divergencia crítica</div>
 <p>En Cepeda vs De la Espriella, <strong>3 de 4 encuestadoras dan ganador a Cepeda</strong> (CNC +12.6, GAD3 +9, Guarumo +5.5). Solo AtlasIntel da ganador a De la Espriella (+9). La explicación probable: el "voto vergonzante" de derecha se captura más fácilmente en encuestas digitales anónimas que en presenciales. En Cepeda vs Valencia, <strong>todas las encuestas muestran un escenario mucho más cerrado</strong>.</p></div>
@@ -239,7 +246,7 @@ table.tb{width:100%;border-collapse:collapse;margin:14px 0;font-size:12px}
 <p style="font-size:12px;color:var(--td);line-height:1.6;margin-bottom:12px">En la segunda vuelta de 2022 (Petro vs Hernández), las encuestas previas mostraban empate técnico. El resultado fue Petro 50.4% vs Hernández 47.3% — <strong>3.1pp de diferencia, más holgada que lo esperado</strong>. El voto en blanco, que en encuestas llegaba a 6-8%, cayó a solo 2.2% en la urna. Los indecisos se rompieron mayoritariamente hacia el candidato percibido como "cambio" (Petro en 2022). Los votantes del tercer candidato eliminado (Fico Gutiérrez, 23.9%) se dividieron: la mayoría fue a Hernández, pero un porcentaje relevante se abstuvo.</p>
 
 <div class="ct" style="font-size:13px;margin-bottom:8px">Factores que inclinarán a los indecisos en 2026</div>
-<table class="tb"><thead><tr><th>Factor</th><th>Favorece a Cepeda</th><th>Favorece a derecha</th></tr></thead>
+<div class="tw"><table class="tb"><thead><tr><th>Factor</th><th>Favorece a Cepeda</th><th>Favorece a derecha</th></tr></thead>
 <tbody>
 <tr><td>Narrativa de "cambio vs continuidad"</td><td>En 2022 ganó el cambio. Ahora Cepeda ES continuidad</td><td style="color:var(--p1)"><strong>Valencia/Espriella representan cambio</strong></td></tr>
 <tr><td>Rechazo al candidato rival</td><td>37.2% dice que nunca votaría Cepeda/Quilcué</td><td>22% de rechazo a De la Espriella, 14.7% a Valencia</td></tr>
@@ -247,7 +254,7 @@ table.tb{width:100%;border-collapse:collapse;margin:14px 0;font-size:12px}
 <tr><td>Seguridad/corrupción</td><td>—</td><td style="color:var(--p1)"><strong>75.9% ve corrupción como problema #1</strong></td></tr>
 <tr><td>Aparato estatal</td><td style="color:var(--red)"><strong>Control del gobierno, programas sociales</strong></td><td>—</td></tr>
 <tr><td>Tendencia regional</td><td>—</td><td style="color:var(--p1)"><strong>Incumbente pierde en 5 de 5 elecciones recientes</strong></td></tr>
-</tbody></table>
+</tbody></table></div>
 </div>
 </div></div>
 
@@ -293,12 +300,12 @@ table.tb{width:100%;border-collapse:collapse;margin:14px 0;font-size:12px}
 <div class="pc" style="border-top:3px solid var(--s1)"><div class="pn" style="color:var(--td)">Otro</div><div class="pp">Sorpresa</div><div class="pnum" style="color:var(--s1)">~5%</div><div class="plb">Probabilidad</div><div class="pbg"><div class="pbf" style="width:5%;background:var(--s1)"></div></div></div>
 </div>
 <div class="cd"><div class="ct">Árbol de decisiones</div>
-<table class="tb"><thead><tr><th>Escenario</th><th>Prob.</th><th>Resultado probable</th><th>Confianza</th></tr></thead>
+<div class="tw"><table class="tb"><thead><tr><th>Escenario</th><th>Prob.</th><th>Resultado probable</th><th>Confianza</th></tr></thead>
 <tbody>
 <tr><td>Valencia pasa 2ª → vs Cepeda</td><td><strong style="color:var(--p1)">55%</strong></td><td>Valencia gana (~55/45)</td><td style="color:var(--org)">Media</td></tr>
 <tr><td>De la Espriella pasa 2ª → vs Cepeda</td><td><strong style="color:var(--org)">40%</strong></td><td>Cepeda gana (~55/45)</td><td style="color:var(--org)">Media-baja</td></tr>
 <tr><td>Sorpresa en primera vuelta</td><td style="color:var(--td)">5%</td><td>Impredecible</td><td style="color:var(--td)">Muy baja</td></tr>
-</tbody></table></div>
+</tbody></table></div></div>
 
 <div class="st" style="margin-top:28px">Pregunta binaria: ¿Izquierda o cambio?</div>
 <div class="g2" style="margin:16px 0">
@@ -321,14 +328,14 @@ table.tb{width:100%;border-collapse:collapse;margin:14px 0;font-size:12px}
 <div class="st">Cinco elecciones recientes en países pares</div>
 <p class="si">El patrón regional es claro pero no unidimensional. No solo pierde el candidato del gobierno: pierde de una manera específica que tiene paralelos directos con Colombia.</p>
 <div class="cd">
-<table class="tb"><thead><tr><th>País</th><th>Aprobación saliente</th><th>Resultado</th><th>Margen 2ª vuelta</th><th>Tema dominante</th></tr></thead>
+<div class="tw"><table class="tb"><thead><tr><th>País</th><th>Aprobación saliente</th><th>Resultado</th><th>Margen 2ª vuelta</th><th>Tema dominante</th></tr></thead>
 <tbody>
 <tr><td><strong>Chile 2025</strong></td><td style="color:var(--red)">28% (Boric)</td><td>Kast (der.) 58.3%</td><td>+16.6pp</td><td>Seguridad, migración</td></tr>
 <tr><td><strong>Argentina 2023</strong></td><td style="color:var(--red)">~25% (Fernández)</td><td>Milei (der.) 55.7%</td><td>+11.4pp</td><td>Inflación, anti-casta</td></tr>
 <tr><td><strong>Ecuador 2023</strong></td><td style="color:var(--red)">~15% (Lasso)</td><td>Noboa (der.) 51.8%</td><td>+3.6pp</td><td>Seguridad, narco</td></tr>
 <tr><td><strong>Panamá 2024</strong></td><td style="color:var(--red)">~20% (Cortizo)</td><td>Mulino (der.) 34.3%*</td><td>1ª vuelta</td><td>Anti-corrupción</td></tr>
 <tr><td><strong>Colombia 2022</strong></td><td style="color:var(--red)">~25% (Duque)</td><td>Petro (izq.) 50.4%</td><td>+3.1pp</td><td>Cambio, desigualdad</td></tr>
-</tbody></table>
+</tbody></table></div>
 </div>
 
 <div class="cd"><div class="ct">Paralelos que aplican y que no aplican a Colombia 2026</div>
@@ -394,13 +401,13 @@ table.tb{width:100%;border-collapse:collapse;margin:14px 0;font-size:12px}
 <div class="sl">09 — Nota metodológica</div>
 <div class="st">Confiabilidad de las encuestas</div>
 <div class="cd">
-<table class="tb"><thead><tr><th>Encuestadora</th><th>Método</th><th>Muestra</th><th>Ranking LSV</th><th>Sesgo</th></tr></thead>
+<div class="tw"><table class="tb"><thead><tr><th>Encuestadora</th><th>Método</th><th>Muestra</th><th>Ranking LSV</th><th>Sesgo</th></tr></thead>
 <tbody>
 <tr><td><strong>CNC</strong> (Cambio)</td><td>Presencial hogares</td><td>2,157</td><td style="color:var(--grn)">Top 3</td><td>Contratos con gobierno ($14MM COP)</td></tr>
 <tr><td><strong>AtlasIntel</strong> (Semana)</td><td>Digital (RDR)</td><td>3,616</td><td style="color:var(--grn)">Top 3</td><td>Sobrerepresenta población digital</td></tr>
 <tr><td><strong>GAD3</strong> (RCN)</td><td>Telefónica CATI</td><td>1,076</td><td style="color:var(--grn)">Top 3</td><td>Muestra más pequeña; excluye sin celular</td></tr>
 <tr><td><strong>Guarumo</strong> (El Tiempo)</td><td>Presencial probabilística</td><td>3,736</td><td style="color:var(--org)">Medio</td><td>Conservadora en estimaciones</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p style="font-size:11px;color:var(--td);margin-top:8px;font-style:italic">Todas en rango medio de calificación (La Silla Vacía, actualizado tras consultas 2026). Margen de error real en Colombia es probablemente ±4pp, no los ±2-3pp declarados, dada la complejidad del campo con 14 candidatos y la brecha digital.</p>
 </div></div></div>
 
